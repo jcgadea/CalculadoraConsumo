@@ -14,4 +14,4 @@ No se realiza comunicacion con el servidor, y los datos no se guardan en ningun 
 
 # Link
 
-Link a la calculadora (v0.1): http://www.navunov.es/calcuKM/calculadora.html
+Link a la calculadora (v0.2): http://www.navunov.es/calcuKM/calculadora.html
