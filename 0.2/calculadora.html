@@ -1,0 +1,113 @@
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Calculadora de coste vehiculo</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="javascript.js"></script>
+
+    </head>
+
+    <body>
+    
+        <div class="cabecera">
+            <h2>CALCULADORA DE COSTE POR KM</h2>
+        </div>
+
+        <div id="forma">
+
+            <form name="datos" id="datos" action="javascript:func()">
+
+                <label for="costeTotal">Coste total de compra:</label>
+                <input autofocus name="costeTotal" id="costeTotal" ></input>
+
+                <label for="costeReparaciones">Coste total reparaciones:</label>
+                <input name="costeReparaciones" id="costeReparaciones" ></input>
+
+                <label for="costeSeguro">Coste anual del seguro:</label>
+                <input name="costeSeguro" id="costeSeguro" ></input>
+
+                <label for="costeImpuestos">Coste anual impuestos:</label>
+                <input name="costeImpuestos" id="costeImpuestos" ></input>
+
+                <label for="costeOtros">Otros costes (ITV, etc):</label>
+                <input name="costeOtros" id="costeOtros" ></input>
+
+                <label for="consumoMedio">Consumo medio combustible:</label>
+                <input name="consumoMedio" id="consumoMedio" ></input>
+
+                <label for="costeCombustible">Coste medio del litro combustible:</label>
+                <input name="costeCombustible" id="costeCombustible" ></input>
+
+                <label for="totalKm">Total Km. :</label>
+                <input name="totalKm" id="totalKm" ></input>
+
+                <label for="añosCoche">Años en propiedad:</label>
+                <input name="añosCoche" id="añosCoche" ></input>
+
+                <div id="botones">
+                    <input type="submit" value="Calcular">
+                    <input onclick="aCero()" type="reset" value="Limpiar">
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="cabecera">
+            <h2>RESULTADOS</h2>
+        </div>
+
+        <div id="resultado">
+            <div class="lineaResultado"><h2>Euros/Km:</h2><h1 id="euKm">0.00€ /Km</h1></div>
+            <div class="lineaResultado"><h2>Coste/mes:</h2><h1 id="euMes">0.00€ /Mes</h1></div>
+            <div id="masInfo"><button onclick="masDatos()">Mas datos...</button></div>
+        </div>
+
+        <div style="display: none;" id="oculto">
+
+            <div class="cabecera">
+                <h2>MAS DATOS</h2>
+            </div>
+        
+            <div id="masDatos">
+
+                <table>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Total de costes</td>
+                        <td id="totalCostes">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total seguros</td>
+                        <td id="totalSeguros">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total impuestos</td>
+                        <td id="totalImpuestos">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total combustible</td>
+                        <td id="precioCombus">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total precio</td>
+                        <td id="precioTotal">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje combustible</td>
+                        <td id="porcentajeCombus">0 %</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
